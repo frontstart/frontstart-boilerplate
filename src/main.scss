@@ -1,0 +1,40 @@
+@import '~frontstart/frontstart';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-white {
+  color: color(white);
+}
+
+.example-colors {
+  list-style: none;
+  padding: 0;
+  max-width: 320px;
+  
+  li {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    padding: 20px;
+
+    &.example-colors_green-subtle { background-color: color(green, subtle); }
+    &.example-colors_green-light { background-color: color(green, light); }
+    &.example-colors_green { background-color: color(green); }
+    &.example-colors_green-dark { background-color: color(green, dark); }
+    &.example-colors_green-black { background-color: color(green, black); }
+  }
+}
